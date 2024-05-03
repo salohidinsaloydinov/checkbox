@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    padding: 75px;
+}
+input{
+    display: none;
+   
+}
+
+
+.squreedthree-label{
+    position: relative;
+}
+.squreedthree-span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #151515;
+    border-radius: 10px;
+    position: relative;
+}
+.squreedthree-span::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 25px;
+    border: solid #fff;
+    border-width: 0px 8px 8px 0px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 5px;
+    left: 15px;
+}
+.squreedthree-label #squreedthree:checked ~ .squreedthree-span::after{
+    border-color: green;
+}
+
+.squreedTwo-label{
+    padding-left: 50px;
+    position: relative;
+}
+.squreedTwo-span{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border: 8px solid white;
+    background-color: #151515;
+    border-radius: 10px;
+    position: relative;
+}
+.squreedTwo-span::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 25px;
+    border: solid #fff;
+    border-width: 0px 8px 8px 0px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 5px;
+    left: 15px;
+}
+.squreedTwo-label #squreedTwo:checked ~ .squreedTwo-span::after{
+    border-color: green;
+}
+
+.squreedOne-label{
+    padding-left: 50px;
+    position: relative;
+}
+.squreedOne-span{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border: 8px solid rgb(255, 255, 255);
+    background-color: #151515;
+    border-radius: 50px 50px;
+    position: relative;
+}
+.squreedOne-span::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 25px;
+    border: solid #fff;
+    border-width: 0px 8px 8px 0px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 5px;
+    left: 15px;
+}
+.squreedOne-label #squreedOne:checked ~ .squreedOne-span::after{
+    border-color: green;
+}
+h1{
+    text-align: center;
+    position: relative;
+    bottom:50px;
+    color: #fff;
+}
+
+.rounderOne-label{
+    padding-left: 50px;
+    position: relative; 
+}
+.roundedOne-span{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border: 8px solid rgb(255, 255, 255);
+    background-color: #151515;
+    border-radius: 50px 50px;
+    position: relative;
+}
+.roundedOne-span::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px 50px ;
+    position: relative;
+    left: 4.5px;
+    top: 5px;
+}
+.rounderOne-label #roundedOne:checked ~ .roundedOne-span::after{
+    background-color: green;
+}
+.rounderTwo-label{
+    padding-left: 50px;
+    position: relative;
+}
+.roundedTwo-span{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border: 8px solid white;
+    background-color: #151515;
+    border-radius: 10px;
+    position: relative;
+}
+.roundedTwo-span::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 4.5px;
+    top: 5px;
+}
+.rounderTwo-label #roundedTwo:checked ~ .roundedTwo-span::after{
+    background-color: green;
+}
+
+.slideThree-label{
+    width: 90px;
+    height: 30px;
+    background-color: #151515;
+    display: inline-block;
+    border-radius: 15px;
+    position: relative;
+
+}
+.on{
+    color: greenyellow;
+    text-transform: uppercase;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+.off{
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+.circle{
+    width: 35px;
+    height: 25px;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    border-radius: 12px;
+    top: 2.5px;
+    left: 6px;
+}
+.slideThree-label input:checked ~ .circle{
+    left: 50px;
+    transition: all 1.5s;
+
+}
